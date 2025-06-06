@@ -72,9 +72,9 @@ namespace TinyHouseProjesi
 
                     string rol;
                     if (radioButtonMusteri.Checked)
-                        rol = "Müşteri";
+                        rol = "Kiracı";
                     else if (radioButtonSatici.Checked)
-                        rol = "Satıcı";
+                        rol = "EvSahibi";
                     else
                     {
                         MessageBox.Show("Lütfen bir rol seçiniz.");

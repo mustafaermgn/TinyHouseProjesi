@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GİRİŞ EKRANI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GİRİŞ EKRANI.Designer.cs">
       <DependentUpon>GİRİŞ EKRANI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IlanEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlanEkleForm.Designer.cs">
+      <DependentUpon>IlanEkleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Kayıt Ekranı.cs">
       <SubType>Form</SubType>
@@ -58,10 +70,26 @@
     <Compile Include="Kayıt Ekranı.Designer.cs">
       <DependentUpon>Kayıt Ekranı.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\..\Desktop\Program.cs">
-      <Link>Program.cs</Link>
+    <Compile Include="KiraciForm.cs">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="KiraciForm.Designer.cs">
+      <DependentUpon>KiraciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkleForm.Designer.cs">
+      <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EvSahibiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvSahibiForm.Designer.cs">
+      <DependentUpon>EvSahibiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlCon.cs" />
     <Compile Include="ŞifremiUnuttum.cs">
       <SubType>Form</SubType>
@@ -69,11 +97,20 @@
     <Compile Include="ŞifremiUnuttum.Designer.cs">
       <DependentUpon>ŞifremiUnuttum.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GİRİŞ EKRANI.resx">
       <DependentUpon>GİRİŞ EKRANI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IlanEkleForm.resx">
+      <DependentUpon>IlanEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kayıt Ekranı.resx">
       <DependentUpon>Kayıt Ekranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkleForm.resx">
+      <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +121,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EvSahibiForm.resx">
+      <DependentUpon>EvSahibiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ŞifremiUnuttum.resx">
       <DependentUpon>ŞifremiUnuttum.cs</DependentUpon>
     </EmbeddedResource>

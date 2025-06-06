@@ -148,7 +148,6 @@
             this.eposta.Name = "eposta";
             this.eposta.Size = new System.Drawing.Size(496, 53);
             this.eposta.TabIndex = 1;
-            this.eposta.Text = "s";
             this.eposta.TextChanged += new System.EventHandler(this.eposta_TextChanged);
             // 
             // sifre
@@ -190,10 +189,9 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "GİRİŞ_EKRANI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.GİRİŞ_EKRANI_Load_1);
+            this.Load += new System.EventHandler(this.GİRİŞ_EKRANI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
