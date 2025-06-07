@@ -7,12 +7,12 @@ namespace TinyHouseProjesi
 {
     public partial class EvSahibiForm : Form
     {
-        private int sahipID;
+        private int kullaniciID;
 
         public EvSahibiForm(int id)
         {
             InitializeComponent();
-            sahipID = id;
+            kullaniciID = id;
         }
 
         private void EvSahibiForm_Load(object sender, EventArgs e)
@@ -33,13 +33,13 @@ namespace TinyHouseProjesi
             FROM EvFotoğraflari
             GROUP BY EvID
         ) f ON e.EvID = f.EvID
-        WHERE e.SahipID = @SahipID";
+        WHERE e.kullaniciID = @kullaniciID";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@SahipID", sahipID);
+                    cmd.Parameters.AddWithValue("@kullaniciID", 21);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();

@@ -92,7 +92,15 @@ namespace TinyHouseProjesi
             sifreForm.Show();
         }
 
-        
+
+        private void GİRİŞ_EKRANI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Uygulamadan çıkmak istediğinize emin misiniz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true; 
+            }
+        }
+        #region Unused Event Handlers
         private void GİRİŞ_EKRANI_Load(object sender, EventArgs e) { }
         private void eposta_TextChanged(object sender, EventArgs e) { }
         private void pictureBox1_Click(object sender, EventArgs e) { }
@@ -100,5 +108,6 @@ namespace TinyHouseProjesi
         private void pictureBox4_Click(object sender, EventArgs e) { }
         private void label1_Click(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
+        #endregion
     }
 }
