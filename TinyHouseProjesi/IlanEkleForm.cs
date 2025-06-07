@@ -55,13 +55,13 @@ namespace TinyHouseProjesi
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string evEkleQuery = @"
-                    INSERT INTO Evler (SahipID, Baslik, Adres, Il, Ilce, OdaSayisi, GecelikFiyat, EvAktif, EklenmeTarihi, Aciklama)
-                    VALUES (@SahipID, @Baslik, @Adres, @Il, @Ilce, @OdaSayisi, @GecelikFiyat, @EvAktif, @EklenmeTarihi, @Aciklama);
+                    INSERT INTO Evler (kullaniciID, Baslik, Adres, Il, Ilce, OdaSayisi, GecelikFiyat, EvAktif, EklenmeTarihi, Aciklama)
+                    VALUES (@kullaniciID, @Baslik, @Adres, @Il, @Ilce, @OdaSayisi, @GecelikFiyat, @EvAktif, @EklenmeTarihi, @Aciklama);
                     SELECT SCOPE_IDENTITY();
                 ";
 
                 SqlCommand cmd = new SqlCommand(evEkleQuery, connection);
-                cmd.Parameters.AddWithValue("@SahipID", 1); 
+                cmd.Parameters.AddWithValue("@kullaniciID", 21 ); 
                 cmd.Parameters.AddWithValue("@Baslik", txtIlanBasligi.Text);
                 cmd.Parameters.AddWithValue("@Adres", txtAdres.Text);
                 cmd.Parameters.AddWithValue("@Il", txtIl.Text);
