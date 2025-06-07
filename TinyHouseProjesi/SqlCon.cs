@@ -9,7 +9,7 @@ namespace TinyHouseProjesi
 {
     internal class SqlCon
     {
-        readonly static string connectionString = ("DATA SOURCE = .\\SQLEXPRESS;INITIAL CATALOG = TinyHouseProject;INTEGRATED SECURITY=TRUE");
+        readonly static string connectionString = ("DATA SOURCE = localhost\\SQLEXPRESS;INITIAL CATALOG = TinyHouseProject;INTEGRATED SECURITY=TRUE");
        
         public static SqlConnection Connect()
         {

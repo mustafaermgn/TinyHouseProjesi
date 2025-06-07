@@ -251,21 +251,21 @@
             this.radioButtonMusteri.AutoSize = true;
             this.radioButtonMusteri.Location = new System.Drawing.Point(426, 507);
             this.radioButtonMusteri.Name = "radioButtonMusteri";
-            this.radioButtonMusteri.Size = new System.Drawing.Size(89, 20);
+            this.radioButtonMusteri.Size = new System.Drawing.Size(61, 20);
             this.radioButtonMusteri.TabIndex = 21;
             this.radioButtonMusteri.TabStop = true;
-            this.radioButtonMusteri.Text = "MÜŞTERİ";
+            this.radioButtonMusteri.Text = "Kiracı";
             this.radioButtonMusteri.UseVisualStyleBackColor = true;
             // 
             // radioButtonSatici
             // 
             this.radioButtonSatici.AutoSize = true;
-            this.radioButtonSatici.Location = new System.Drawing.Point(612, 507);
+            this.radioButtonSatici.Location = new System.Drawing.Point(609, 507);
             this.radioButtonSatici.Name = "radioButtonSatici";
-            this.radioButtonSatici.Size = new System.Drawing.Size(70, 20);
+            this.radioButtonSatici.Size = new System.Drawing.Size(82, 20);
             this.radioButtonSatici.TabIndex = 22;
             this.radioButtonSatici.TabStop = true;
-            this.radioButtonSatici.Text = "SATICI";
+            this.radioButtonSatici.Text = "EvSahibi";
             this.radioButtonSatici.UseVisualStyleBackColor = true;
             // 
             // Kayıt_Ekranı
