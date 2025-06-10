@@ -13,10 +13,14 @@ namespace TinyHouseProjesi
        
         private List<string> secilenFotograflarListesi = new List<string>();
 
-        public IlanEkleForm()
+        private int kullaniciID;
+
+        public IlanEkleForm(int id)
         {
             InitializeComponent();
+            kullaniciID = id;
         }
+
 
         private void btnFotoSec_Click(object sender, EventArgs e)
         {
@@ -61,7 +65,7 @@ namespace TinyHouseProjesi
                 ";
 
                 SqlCommand cmd = new SqlCommand(evEkleQuery, connection);
-                cmd.Parameters.AddWithValue("@kullaniciID", 21 ); 
+                cmd.Parameters.AddWithValue("@kullaniciID", kullaniciID ); 
                 cmd.Parameters.AddWithValue("@Baslik", txtIlanBasligi.Text);
                 cmd.Parameters.AddWithValue("@Adres", txtAdres.Text);
                 cmd.Parameters.AddWithValue("@Il", txtIl.Text);
